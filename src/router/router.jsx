@@ -5,6 +5,5 @@ import privateRouter from "./privetRouter";
 
 const router = createBrowserRouter([...publicRouter, ...privateRouter]);
 
-
-// export default router here
+// export default router here 
 export default router;

@@ -3,6 +3,7 @@ import About from "../pages/about/About";
 import Blog from "../pages/blog/Blog";
 import Team from "../pages/team/Team";
 import Layouts from "../component/layouts/layouts";
+import Contact from "../pages/contact/Contact";
 
 
 const publicRouter = [
@@ -24,6 +25,10 @@ const publicRouter = [
             {
                 path: "/team",
                 element: <Team/>
+            },
+            {
+                path: "/contact",
+                element: <Contact/>
             }
         ]
     }

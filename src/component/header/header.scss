@@ -1,0 +1,39 @@
+header{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-left{
+        .logo{
+            img{
+                width: 200px;
+            }
+        }
+    }
+    .header-right{
+        .menu{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            li{
+                a{
+                    font-size: 16px;
+                    color: #333;
+                    padding: 15px;
+                    border-radius: 15px;
+                    transition: all .4s ease-in-out;
+                    
+                    &:hover{
+                        background-color: #ccc;
+                    }
+                }
+            }
+        }
+    }
+}

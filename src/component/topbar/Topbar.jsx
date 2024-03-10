@@ -12,15 +12,15 @@ const Topbar = () => {
         <div className="container tobarContainer">
             <div className="tobar-left">
                 <ul>
-                    <li><a href="#"><FaPhone />01797562295</a></li>
-                    <li><a href="#"><FaPhoneFlip />01797562295</a></li>
-                    <li><a href="#"><MdEmail />info@sorobindu.com</a></li>
+                    <li><FaPhone />01797562295</li>
+                    <li><FaPhoneFlip />01797562295</li>
+                    <li><MdEmail />info@sorobindu.com</li>
                 </ul>
             </div>
             <div className="tobar-right">
                 <div className="topbarform">
-                    <button>Login</button>
-                    <button>Register</button>
+                    <Link>Login</Link>
+                    <Link>Register</Link>
                 </div>
             </div>
         </div>

@@ -1,9 +1,15 @@
+import Layouts from "../component/layouts/layouts";
 import Admin from "../pages/admin/Admin";
 
 const privateRouter = [
     {
-        path: "/admin",
-        element: <Admin/>
+        element: <Layouts/>,
+        children: [
+            {
+                path: "/admin",
+                element: <Admin/>
+            }
+        ]
     }
 ];
 

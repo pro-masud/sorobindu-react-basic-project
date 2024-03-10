@@ -1,6 +1,5 @@
 .topbar{
     background-color: #0063AD;
-    padding: 10px 0px;
     color: #fff;
 
     .tobarContainer{
@@ -16,17 +15,7 @@
             li{ 
                 display: flex;
                 align-items: center;
-
-                a{
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    color: #fff;
-
-                    svg{
-                        fill: #e6ff08;
-                    }
-                }
+                gap: 5px;
             }
         }
 
@@ -37,7 +26,7 @@
             padding:10px ;
             border-radius: 20px;
             
-            button{
+            a{
                 background-color: #2980B9;
                 overflow: none;
                 border: none;
@@ -47,10 +36,10 @@
                 justify-content: center;
                 align-items: center;
             }
-            button:nth-child(1){
+            a:nth-child(1){
                 border-radius: 20px 0px 0px 20px;
             }
-            button:nth-child(2){
+            a:nth-child(2){
                 border-radius: 0px 20px 20px 0px;
             }
         }

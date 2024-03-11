@@ -1,0 +1,31 @@
+.admitContainer{
+    display: flex;
+    padding: 20px;
+
+    .admin-left{
+        ul {
+            width: 250px;
+
+            li{
+                a{
+                    display: block;
+                    color: #fff;
+                    padding: 20px;
+                    background-color: #333;
+                    margin-bottom: 1px;
+                    transition: all .3s ease-in-out;
+
+                    &:hover{
+                        color: #333;
+                        background-color: #fff;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    .admin-right{
+        padding: 20px 40px;
+    }
+}

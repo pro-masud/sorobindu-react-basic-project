@@ -1,0 +1,34 @@
+.container-contact-form{
+    padding: 50px 20px;
+
+    h2{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 20px 0;
+        text-transform: capitalize;
+    }
+
+    .contact-form{
+        width: 600px;
+
+        .react-form{
+
+            form{
+                display: flex;
+                flex-direction: column;
+
+                input{
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    margin: 10px 0;
+                }
+
+                button{
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}

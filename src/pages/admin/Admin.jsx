@@ -1,9 +1,11 @@
 import React from 'react'
 import HelmetHas from '../../component/helmetHas/HelmetHas'
-import { Link, Outlet } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 import "./admin.scss";
+import { activeRouter } from '../../helper/helper.js';
 
 const Admin = () => {
+  const location = useLocation();
   return (
     <>
       <HelmetHas title={"Admin"}/>
@@ -11,11 +13,11 @@ const Admin = () => {
       <div className="container admitContainer">
         <div className="admin-left">
           <ul>
-            <li><Link to="dashboard">Dashboard</Link></li>
-            <li><Link to="post">Post</Link></li>
-            <li><Link to="users">Users</Link></li>
-            <li><Link to="Category">Category</Link></li>
-            <li><Link to="role">Role</Link></li>
+            <li><Link className={activeRouter(location.pathname, "dashboard") ? "active" : " "} to="dashboard">Dashboard</Link></li>
+            <li><Link className={activeRouter(location.pathname, "post") ? "active" : " "} to="post">Post</Link></li>
+            <li><Link className={activeRouter(location.pathname, "users") ? "active" : " "} to="users">Users</Link></li>
+            <li><Link className={activeRouter(location.pathname, "category") ? "active" : " "} to="category">Category</Link></li>
+            <li><Link className={activeRouter(location.pathname, "role") ? "active" : " "} to="role">Role</Link></li>
           </ul>
         </div>
         <div className="admin-right">

@@ -11,6 +11,13 @@ const Contact = () => {
     message: "",
   });
 
+  const handInputValue = (e) => {
+    setInput((preValue) => ({
+      ...preValue, 
+      [e.target.name] : e.target.value
+    }));
+  }
+
   return (
     <>
       <HelmetHas title={"Contact"} />
@@ -23,19 +30,17 @@ const Contact = () => {
             <form action="">
               <input
                 type="text"
-                placeholder="User Name"
-                value={input.name}
-                onChange={(e) =>
-                  setInput((preValue) => ({...preValue, name: e.target.value }))
-                }
+                placeholder="User Name" name="name"
+                value={input.name} onChange={handInputValue}
               />
-              <input type="text" placeholder="Email" value={input.email} onChange={(e) => setInput((preValue) => ({...preValue, email: e.target.value}))}/>
+              <input type="text" name="email" placeholder="Email" value={input.email} onChange={handInputValue} />
               <input
-                type="text"
+                type="text" name="password"
                 placeholder="Password"
-                value={input.password} onChange={(e) => setInput((preValue) => ({...preValue, password: e.target.value}))}
+                value={input.password}
+                onChange={handInputValue}
               />
-              <input type="text" placeholder="Message" value={input.message} onChange={(e) => setInput((preValue) => ({...preValue, message: e.target.value}))} />
+              <input type="text" name="message" placeholder="Message" value={input.message} onChange={handInputValue} />
               <button type="submit">Submit</button>
             </form>
           </div>
